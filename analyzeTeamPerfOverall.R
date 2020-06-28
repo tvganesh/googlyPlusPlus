@@ -65,6 +65,8 @@ analyzeTeamPerfOverall <- function(matches,matchFunc,team,rankV,plotOrTable2,rep
     print(repType2)
     
   } else if (t20type == "ODIW"){
+    cat("dir=","\n")
+    cat(dir("./odi/odiWomenAllMatchesAllTeams/"))
     ODIWmatch <- paste("./odi/odiWomenAllMatchesAllTeams/", matches,".RData",sep="")
     load(ODIWmatch)
     matchesDF <- matches

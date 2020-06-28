@@ -93,7 +93,7 @@ printOrPlotTeamPerfOverall <- function(input,output,t20type="IPL"){
         output$RankODIW = renderUI({
             selectInput('rankODIW', 'Choose the rank',choices=rankValues,selected=input$rankODIW)
         })
-        print(input$teamMatchesODIW)
+        cat("ODIW matches=",input$teamMatchesODIW)
         n <- strsplit(as.character(input$teamMatchesODIW),"-")
         analyzeTeamPerfOverall(input$teamMatchesODIW,input$overallperfFuncODIW,n[[1]][2],input$rankODIW,
                                input$plotOrTable2ODIW,

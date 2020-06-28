@@ -245,6 +245,7 @@ ODIWMatches2Teams <- gsub(".RData","",a1)
 
 a2 <-list.files("./odi/odiWomenAllMatchesAllTeams/")
 ODIWTeamsAll <- gsub(".RData","",a2)
+cat("All ODIW teams=",ODIWTeamsAll)
 
 # odi Men Team names
 ODIWTeamNames <- list("Australia","India","Pakistan","West Indies", 'Sri Lanka',
